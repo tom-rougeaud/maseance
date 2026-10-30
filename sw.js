@@ -1,5 +1,5 @@
 /* Service worker (maseance-)  — mise en cache de l’appli (lecture hors connexion). Ne touche jamais aux requêtes vers la base. */
-var CACHE = 'maseance-202610300855';
+var CACHE = 'maseance-202610300946';
 var PREFIX = 'maseance-';
 var FILES = ['./', 'index.html', 'config.js', 'manifest.webmanifest', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png', 'icons/favicon-32.png'];
 self.addEventListener('install', function (e) {
