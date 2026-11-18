@@ -4884,8 +4884,9 @@ var Upd = (function () {
   function siblingOk() {
     if (!APP.frere) return false;
     if (APP.manuels) return true;
-    var o = (typeof FICHES_CONFIG !== 'undefined' && FICHES_CONFIG.OWNER_EMAILS) || [], em = (Api.user() && Api.user().email || '').toLowerCase();
-    return o.map(function (x) { return String(x).toLowerCase(); }).indexOf(em) >= 0;
+    /* comparaison par identifiant interne du compte (plus d’e-mail dans le code public) */
+    var o = (typeof FICHES_CONFIG !== 'undefined' && FICHES_CONFIG.OWNER_IDS) || [], id = (Api.user() && Api.user().id) || '';
+    return !!id && o.indexOf(id) >= 0;
   }
   function siblingCard() {
     if (!siblingOk()) return null;

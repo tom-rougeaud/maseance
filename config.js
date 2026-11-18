@@ -4,6 +4,6 @@
 var FICHES_CONFIG = {
   SUPABASE_URL: 'https://zfqzvwpjxmrlctxsmxch.supabase.co',
   SUPABASE_ANON_KEY: 'sb_publishable_21JhJbzpINsSzFdD0oGqUw_BL_AtgSA',
-  /* comptes qui voient, dans « Fiches », le lien vers « Ma séance » (la version « mes manuels » reste discrète pour les autres) */
-  OWNER_EMAILS: ['tom.rougeaud.education@gmail.com']
+  /* identifiants de compte (internes, sans e-mail) qui voient, dans « Fiches », le lien vers « Ma séance » (la version « mes manuels » reste discrète pour les autres) */
+  OWNER_IDS: ['cae5c244-62e3-4b2a-a32a-39bab5561cc8']
 };
